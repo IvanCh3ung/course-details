@@ -48,7 +48,7 @@ MODULEITEMS_DICT = {
             'type': 'module_item_type',
             'module_id': 'module_id',
             'html_url': 'module_item_html_url',
-            'page_url': 'module_item_page_url',
+            'url': 'module_item_page_url',
             'url': 'module_item_url',
             'published': 'module_item_published',
             'course_id': 'course_id',
@@ -126,16 +126,16 @@ ENROLLMENTS_DICT = {
 NEWANALYTICS_DICT = {
     "name": "new_analytics",
     "rename_dict": {
-            'globalStudentId': 'global_user_id',
-            'globalCourseId': 'global_course_id',
-            'studentName': 'student_name',
-            'contentType': 'content_type',
-            'contentName': 'content_name',
-            'pageviewCount': 'pageview_count',
-            'participationCount': 'participation_count',
-            'startDate': 'access_date',
-            'lastAccessTime': 'last_access_datetime',
-            'firstAccessTime': 'first_access_datetime',
+           'Student Id': 'global_user_id',
+           'Course Id': 'global_course_id',
+           'Student Name': 'student_name',
+           'Content Type': 'content_type',
+           'Content Name': 'content_name',
+           'Times Viewed': 'pageview_count',
+           'Times Participated': 'participation_count',
+           'Start Date': 'access_date',
+           'Last Viewed': 'last_access_datetime',
+           'First Viewed': 'first_access_datetime',
             'file': 'original_data_file'
     }
 }
