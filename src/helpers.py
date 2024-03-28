@@ -1,3 +1,4 @@
+
 from pathlib import Path
 import os
 from os import walk
@@ -205,7 +206,8 @@ def schema_rename_and_drop_columns(df, rename_dict, schema_file, drop_rest=False
         axis=1)
     
     if has_dropped & drop_rest:
-        changed_cols_df = changed_cols_df.append(dropped_df, ignore_index=True)
+        #changed_cols_df = changed_cols_df.append(dropped_df, ignore_index=True)
+        changed_cols_df = changed_cols_df._append(dropped_df, ignore_index = True)
         
     try:    
         changed_cols_df = changed_cols_df.merge(schema_df, how="left", left_on="original", right_on="name")
