@@ -1,0 +1,8 @@
+jupyter
+# python>=3.7.0
+pandas
+canvasapi==2.0.0
+python-dotenv
+termcolor
+tabulate
+yaspin
